@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: thaiha-demo-argocd
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/thaiha-hub/thaiha-demo-argocd.git
+    targetRevision: main
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: grupp2
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
