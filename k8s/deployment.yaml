@@ -1,18 +1,18 @@
 apiVersion: apps/v1                                                       
 kind: Deployment                                                          
 metadata:                                                                 
-  name: jonas-nginx-demo                                                        
+  name: thaiha-nginx-demo                                                        
   labels:                                                                 
-    app: jonas-nginx-demo                                                       
+    app: thaiha-nginx-demo                                                       
 spec:                                                                     
   replicas: 2                                                             
   selector:                                                               
     matchLabels:                                                          
-      app: jonas-nginx-demo                                                     
+      app: thaiha-nginx-demo                                                     
   template:                                                               
     metadata:                                                             
       labels:                                                             
-        app: jonas-nginx-demo                                                   
+        app: thaiha-nginx-demo                                                   
     spec:                                                                 
       containers:                                                         
         - name: nginx                                                       

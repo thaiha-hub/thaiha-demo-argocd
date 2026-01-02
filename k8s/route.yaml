@@ -1,11 +1,11 @@
 apiVersion: route.openshift.io/v1                                         
 kind: Route                                                               
 metadata:                                                                 
-  name: jonas-nginx-demo                                                        
+  name: thaiha-nginx-demo                                                        
   labels:                                                                 
-    app: jonas-nginx-demo                                                       
+    app: thaiha-nginx-demo                                                       
 spec:                                                                     
   to:                                                                     
     kind: Service                                                         
-    name: jonas-nginx-demo                                                      
+    name: thaiha-nginx-demo                                                      
     weight: 100
